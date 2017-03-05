@@ -1,0 +1,33 @@
+name: allsafe
+description: "Custom sub-theme, inherits from the Foundation base theme read <a href=\"http://foundation.zurb.com/docs/index.php\">framework documentation</a>"
+core: 8.x
+type: theme
+base theme: zurb_foundation
+
+# Image appears on admin/appearance
+# screenshot: images/screenshot.jpg
+
+# Uncomment these lines and change "allsafe" to your theme name if you
+# need to add custom CSS or JS
+
+libaries:
+   - allsafe/global
+   - allsafe/fonts
+
+ckeditor_stylesheets: 
+   - css/allsafe.css
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  help: 'Help'
+  content: 'Content'
+  content_bottom: Bottom Content
+  footer: 'Footer'
+  #footer_first: 'Footer first column'
+  #footer_middle: 'Footer middle column'
+  #footer_last: 'Footer last column'
+  sidebar_first: 'Sidebar first'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
