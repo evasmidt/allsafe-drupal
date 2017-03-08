@@ -78,6 +78,20 @@
         {% endif %}
       {% endif %}
 
+
+  <div class="inner-wrap" id="inner-wrap">
+
+ <div class="top-bar" id="menu" data-toggler><!-- menu list -->
+   <div class="row"> 
+    <div data-toggle="menu" class="large-12 columns">
+      <a class="menu-toggle__alt" data-toggle>Close</a>
+     </div>
+    </div>
+    <div class="row fader">
+     {{ page.left_off_canvas }}
+    </div>
+ </div>
+
       <header class="row" role="banner" aria-label="{{ 'Site header'|t }}">
         {% if linked_site_name or linked_logo %}
           <div class="large-2 columns">
