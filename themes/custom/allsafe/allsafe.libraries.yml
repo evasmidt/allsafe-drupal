@@ -1,0 +1,20 @@
+fonts:
+  version: 1.0
+  css:
+    theme:
+      css/styles.css: {}
+      '//fonts.googleapis.com/css?family=Montserrat:400,700': { type: external, minified: true }
+      '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic,700':{ type: external, minified: true }
+
+
+global:
+  version: 1.0
+  css:
+    base:
+      css/styles.css: {}
+      css/foundation.css: {}
+  js:
+    js/vendor/foundation.min.js: {}
+    js/vendor/jquery.js: {}
+  # dependencies:
+  #   - core/jquery
