@@ -16,5 +16,5 @@ global:
   js:
     js/vendor/foundation.min.js: {}
     js/vendor/jquery.js: {}
-  # dependencies:
-  #   - core/jquery
+   dependencies:
+     - core/jquery
