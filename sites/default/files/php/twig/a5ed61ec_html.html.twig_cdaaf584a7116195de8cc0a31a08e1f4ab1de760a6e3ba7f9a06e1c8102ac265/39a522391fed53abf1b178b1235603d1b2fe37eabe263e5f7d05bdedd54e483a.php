@@ -1,7 +1,7 @@
 <?php
 
-/* themes/zurb_foundation/templates/html.html.twig */
-class __TwigTemplate_7025f3fd78463dc18c39f34d030313bf189255447ee5a3421d84eb15ff05bc37 extends Twig_Template
+/* themes/custom/allsafe/templates/html/html.html.twig */
+class __TwigTemplate_7b8b7bf9cec313259d9e83f7eb145dd0f08220306a00af649f8c7f96e16d8284 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -16,7 +16,7 @@ class __TwigTemplate_7025f3fd78463dc18c39f34d030313bf189255447ee5a3421d84eb15ff0
     protected function doDisplay(array $context, array $blocks = array())
     {
         $tags = array("set" => 29);
-        $filters = array("clean_class" => 31, "raw" => 37, "safe_join" => 40, "t" => 46);
+        $filters = array("clean_class" => 31, "raw" => 37, "safe_join" => 41, "t" => 47);
         $functions = array();
 
         try {
@@ -52,47 +52,48 @@ class __TwigTemplate_7025f3fd78463dc18c39f34d030313bf189255447ee5a3421d84eb15ff0
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar((isset($context["html_attributes"]) ? $context["html_attributes"] : null)));
         echo ">
   <head>
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"https://cloud.typography.com/682896/7766352/css/fonts.css\" />
     <head-placeholder token=\"";
-        // line 39
+        // line 40
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar((isset($context["placeholder_token"]) ? $context["placeholder_token"] : null)));
         echo "\">
     <title>";
-        // line 40
+        // line 41
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar($this->env->getExtension('drupal_core')->safeJoin($this->env, (isset($context["head_title"]) ? $context["head_title"] : null), " | ")));
         echo "</title>
     <css-placeholder token=\"";
-        // line 41
+        // line 42
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar((isset($context["placeholder_token"]) ? $context["placeholder_token"] : null)));
         echo "\">
     <js-placeholder token=\"";
-        // line 42
+        // line 43
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar((isset($context["placeholder_token"]) ? $context["placeholder_token"] : null)));
         echo "\">
   </head>
   <body";
-        // line 44
+        // line 45
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["attributes"]) ? $context["attributes"] : null), "addClass", array(0 => (isset($context["body_classes"]) ? $context["body_classes"] : null)), "method"), "html", null, true));
         echo ">
   <a href=\"#main-content\" class=\"visually-hidden focusable skip-link\">
     ";
-        // line 46
+        // line 47
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar(t("Skip to main content")));
         echo "
   </a>
   ";
-        // line 48
+        // line 49
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["page_top"]) ? $context["page_top"] : null), "html", null, true));
         echo "
   ";
-        // line 49
+        // line 50
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["page"]) ? $context["page"] : null), "html", null, true));
         echo "
   ";
-        // line 50
+        // line 51
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["page_bottom"]) ? $context["page_bottom"] : null), "html", null, true));
         echo "
   <js-bottom-placeholder token=\"";
-        // line 51
+        // line 52
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar((isset($context["placeholder_token"]) ? $context["placeholder_token"] : null)));
         echo "\">
   <script>
@@ -107,7 +108,7 @@ class __TwigTemplate_7025f3fd78463dc18c39f34d030313bf189255447ee5a3421d84eb15ff0
 
     public function getTemplateName()
     {
-        return "themes/zurb_foundation/templates/html.html.twig";
+        return "themes/custom/allsafe/templates/html/html.html.twig";
     }
 
     public function isTraitable()
@@ -117,7 +118,7 @@ class __TwigTemplate_7025f3fd78463dc18c39f34d030313bf189255447ee5a3421d84eb15ff0
 
     public function getDebugInfo()
     {
-        return array (  96 => 51,  92 => 50,  88 => 49,  84 => 48,  79 => 46,  74 => 44,  69 => 42,  65 => 41,  61 => 40,  57 => 39,  52 => 37,  49 => 36,  47 => 33,  46 => 32,  45 => 31,  44 => 30,  43 => 29,);
+        return array (  97 => 52,  93 => 51,  89 => 50,  85 => 49,  80 => 47,  75 => 45,  70 => 43,  66 => 42,  62 => 41,  58 => 40,  52 => 37,  49 => 36,  47 => 33,  46 => 32,  45 => 31,  44 => 30,  43 => 29,);
     }
 }
 /* {#*/
@@ -158,6 +159,7 @@ class __TwigTemplate_7025f3fd78463dc18c39f34d030313bf189255447ee5a3421d84eb15ff0
 /* <!DOCTYPE html>*/
 /* <html {{ html_attributes|raw }}>*/
 /*   <head>*/
+/*   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/682896/7766352/css/fonts.css" />*/
 /*     <head-placeholder token="{{ placeholder_token|raw }}">*/
 /*     <title>{{ head_title|safe_join(' | ') }}</title>*/
 /*     <css-placeholder token="{{ placeholder_token|raw }}">*/
