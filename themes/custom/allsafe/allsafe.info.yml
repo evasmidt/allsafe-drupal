@@ -18,16 +18,20 @@ ckeditor_stylesheets:
    - css/allsafe.css
 
 regions:
-  header: 'Header'
+  meta_header: 'Meta Header'
+  header: Header
   primary_menu: 'Primary menu'
   help: 'Help'
-  content: 'Content'
+  content: Content
+  content_top: Top Content
   content_bottom: Bottom Content
   footer: 'Footer'
   #footer_first: 'Footer first column'
   #footer_middle: 'Footer middle column'
   #footer_last: 'Footer last column'
-  sidebar_first: 'Sidebar first'
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
-
+  left_off_canvas: 'Top off canvas'
+  right_off_canvas: 'Right off canvas'

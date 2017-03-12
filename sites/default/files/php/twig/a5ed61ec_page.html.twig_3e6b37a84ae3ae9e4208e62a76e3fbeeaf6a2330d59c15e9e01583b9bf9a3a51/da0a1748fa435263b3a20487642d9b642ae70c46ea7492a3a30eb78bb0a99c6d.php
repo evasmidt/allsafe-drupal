@@ -15,9 +15,9 @@ class __TwigTemplate_a94b9323a4471a51214d32003512d0513c5d5faa8f93b3ed63731b28489
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 76, "spaceless" => 158);
-        $filters = array("t" => 75, "date" => 201);
-        $functions = array("path" => 109);
+        $tags = array("if" => 77, "spaceless" => 139);
+        $filters = array("t" => 90, "date" => 182);
+        $functions = array("path" => 90);
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
@@ -42,64 +42,18 @@ class __TwigTemplate_a94b9323a4471a51214d32003512d0513c5d5faa8f93b3ed63731b28489
         // line 57
         echo "
 
-
-
 <div class=\"main_wrapper\">
 <header class=\"header_main\">
-
-
 <div class=\"top-bar\">
   <div class=\"top-bar-left logo-img\"><img src=\"logo.svg\">
     
-    <div class=\"top-bar-right nav_primary\">
-      <div class=\"title-bar\" data-responsive-toggle=\"example-menu\" data-hide-for=\"medium\">
-  <button class=\"menu-icon\" type=\"button\" data-toggle></button>
-    <div class=\"title-bar-title\">Menu</div>
+  <div class=\"top-bar-right nav_primary\">
+  <div class=\"title-bar\" data-responsive-toggle=\"example-menu\" data-hide-for=\"medium\">
+    <button class=\"menu-icon\" type=\"button\" data-toggle></button>
+  <div class=\"title-bar-title\">Menu</div>
 </div>
 
 <div class=\"top-bar\" id=\"example-menu\">
-     <!--  <header class=\"row\" role=\"banner\" aria-label=\"";
-        // line 75
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar(t("Site header")));
-        echo "\">
-        ";
-        // line 76
-        if (((isset($context["linked_site_name"]) ? $context["linked_site_name"] : null) || (isset($context["linked_logo"]) ? $context["linked_logo"] : null))) {
-            // line 77
-            echo "          <div class=\"large-2 columns\">
-            ";
-            // line 78
-            if ((isset($context["linked_logo"]) ? $context["linked_logo"] : null)) {
-                // line 79
-                echo "              ";
-                echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["linked_logo"]) ? $context["linked_logo"] : null), "html", null, true));
-                echo "
-            ";
-            }
-            // line 81
-            echo "          </div>
-          <div class=\"left large-4 columns\">
-            ";
-            // line 83
-            if ((isset($context["is_front"]) ? $context["is_front"] : null)) {
-                // line 84
-                echo "              <h1 id=\"site-name\">";
-                echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["linked_site_name"]) ? $context["linked_site_name"] : null), "html", null, true));
-                echo "</h1>
-            ";
-            } else {
-                // line 86
-                echo "              <div id=\"site-name\">";
-                echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["linked_site_name"]) ? $context["linked_site_name"] : null), "html", null, true));
-                echo "</div>
-            ";
-            }
-            // line 88
-            echo "          </div>
-        ";
-        }
-        // line 89
-        echo "-->
       
     </div>
 
@@ -107,87 +61,87 @@ class __TwigTemplate_a94b9323a4471a51214d32003512d0513c5d5faa8f93b3ed63731b28489
  </header> 
 
       ";
-        // line 96
+        // line 77
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array())) {
-            // line 97
+            // line 78
             echo "        <div class=\"row\">
           <div class=\"large-12 columns\">
             ";
-            // line 99
+            // line 80
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "html", null, true));
             echo "
           </div>
         </div>
       ";
         }
-        // line 103
+        // line 84
         echo "
       <div class=\"row\">
         ";
-        // line 105
+        // line 86
         if ((isset($context["show_account_info"]) ? $context["show_account_info"] : null)) {
-            // line 106
+            // line 87
             echo "          <div class=\"";
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar((((isset($context["site_slogan"]) ? $context["site_slogan"] : null)) ? ("large-6") : ("large-4 columns large-offset-8"))));
             echo " columns hide-for-small\">
             <p>
               ";
-            // line 108
+            // line 89
             if ((isset($context["logged_in"]) ? $context["logged_in"] : null)) {
-                // line 109
+                // line 90
                 echo "                <a href=\"";
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar($this->env->getExtension('drupal_core')->getPath("user.page")));
                 echo "\">";
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar(t("My Account")));
                 echo "</a>
                 <a href=\"";
-                // line 110
+                // line 91
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar($this->env->getExtension('drupal_core')->getPath("user.logout")));
                 echo "\">";
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar(t("Logout")));
                 echo "</a>
               ";
             } else {
-                // line 112
+                // line 93
                 echo "                <a href=\"";
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar($this->env->getExtension('drupal_core')->getPath("user.login")));
                 echo "\">";
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar(t("Login")));
                 echo "</a>
                 <a href=\"";
-                // line 113
+                // line 94
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar($this->env->getExtension('drupal_core')->getPath("user.register")));
                 echo "\">";
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar(t("Sign Up")));
                 echo "</a>
               ";
             }
-            // line 115
+            // line 96
             echo "            </p>
           </div>
         ";
         }
-        // line 118
+        // line 99
         echo "        ";
         if ((isset($context["site_slogan"]) ? $context["site_slogan"] : null)) {
-            // line 119
+            // line 100
             echo "          <div class=\"large-6 columns hide-for-small\">
             ";
-            // line 120
+            // line 101
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["site_slogan"]) ? $context["site_slogan"] : null), "html", null, true));
             echo "
           </div>
         ";
         }
-        // line 123
+        // line 104
         echo "        ";
         if ((isset($context["show_account_info"]) ? $context["show_account_info"] : null)) {
-            // line 124
+            // line 105
             echo "          <div class=\"show-for-small\">
             <div class=\"six mobile-two columns\">
               <p>
                 <a href=\"";
-            // line 127
+            // line 108
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar($this->env->getExtension('drupal_core')->getPath("user.login")));
             echo "\" class=\"radius button\">";
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar(t("Login")));
@@ -197,7 +151,7 @@ class __TwigTemplate_a94b9323a4471a51214d32003512d0513c5d5faa8f93b3ed63731b28489
             <div class=\"six mobile-two columns\">
               <p>
                 <a href=\"";
-            // line 132
+            // line 113
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar($this->env->getExtension('drupal_core')->getPath("user.register")));
             echo "\" class=\"radius success button\">";
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar(t("Sign Up")));
@@ -207,159 +161,159 @@ class __TwigTemplate_a94b9323a4471a51214d32003512d0513c5d5faa8f93b3ed63731b28489
           </div>
         ";
         }
-        // line 137
+        // line 118
         echo "      </div>
 
       ";
-        // line 139
+        // line 120
         if (((isset($context["messages"]) ? $context["messages"] : null) &&  !(isset($context["zurb_foundation_messages_modal"]) ? $context["zurb_foundation_messages_modal"] : null))) {
-            // line 140
+            // line 121
             echo "      <div class=\"l-messages row\">
         <div class=\"large-12 columns\">
           ";
-            // line 142
+            // line 123
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["messages"]) ? $context["messages"] : null), "html", null, true));
             echo "
         </div>
       </div>
       ";
         }
-        // line 146
+        // line 127
         echo "
       ";
-        // line 147
+        // line 128
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "help", array())) {
-            // line 148
+            // line 129
             echo "      <div class=\"l-help row\">
         <div class=\"large-12 columns\">
           ";
-            // line 150
+            // line 131
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "help", array()), "html", null, true));
             echo "
         </div>
       </div>
       ";
         }
-        // line 154
+        // line 135
         echo "
       <div class=\"row\">
         <main id=\"main\" class=\"";
-        // line 156
+        // line 137
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["main_grid"]) ? $context["main_grid"] : null), "html", null, true));
         echo " columns\" role=\"main\">
           ";
-        // line 157
+        // line 138
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "highlighted", array())) {
-            // line 158
+            // line 139
             echo "            ";
             ob_start();
-            // line 159
+            // line 140
             echo "              ";
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "highlighted", array()), "html", null, true));
             echo "
             ";
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
-            // line 161
+            // line 142
             echo "          ";
         }
-        // line 162
+        // line 143
         echo "          <a id=\"main-content\"></a>
           ";
-        // line 163
+        // line 144
         if ((isset($context["breadcrumb"]) ? $context["breadcrumb"] : null)) {
             echo " ";
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["breadcrumb"]) ? $context["breadcrumb"] : null), "html", null, true));
             echo " ";
         }
-        // line 164
+        // line 145
         echo "          <section>
             ";
-        // line 165
+        // line 146
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array()), "html", null, true));
         echo "
           </section>
         </main>
         ";
-        // line 168
+        // line 149
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array())) {
-            // line 169
+            // line 150
             echo "          <div id=\"sidebar-first\" class=\"";
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["sidebar_first_grid"]) ? $context["sidebar_first_grid"] : null), "html", null, true));
             echo " columns sidebar \">
             ";
-            // line 170
+            // line 151
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array()), "html", null, true));
             echo "
           </div>
         ";
         }
-        // line 173
+        // line 154
         echo "        ";
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array())) {
-            // line 174
+            // line 155
             echo "          <div id=\"sidebar-second\" class=\"";
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["sidebar_sec_grid"]) ? $context["sidebar_sec_grid"] : null), "html", null, true));
             echo " columns sidebar\">
             ";
-            // line 175
+            // line 156
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array()), "html", null, true));
             echo "
           </div>
         ";
         }
-        // line 178
+        // line 159
         echo "      </div>
       ";
-        // line 179
+        // line 160
         if ((($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_middle", array())) || $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_last", array()))) {
-            // line 180
+            // line 161
             echo "        <footer class=\"row\">
           ";
-            // line 181
+            // line 162
             if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array())) {
-                // line 182
+                // line 163
                 echo "            <div id=\"footer-first\" class=\"large-4 columns\">
               ";
-                // line 183
+                // line 164
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_first", array()), "html", null, true));
                 echo "
             </div>
           ";
             }
-            // line 186
+            // line 167
             echo "          ";
             if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_middle", array())) {
-                // line 187
+                // line 168
                 echo "            <div id=\"footer-middle\" class=\"large-4 columns\">
               ";
-                // line 188
+                // line 169
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_middle", array()), "html", null, true));
                 echo "
             </div>
           ";
             }
-            // line 191
+            // line 172
             echo "          ";
             if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_last", array())) {
-                // line 192
+                // line 173
                 echo "            <div id=\"footer-last\" class=\"large-4 columns\">
               ";
-                // line 193
+                // line 174
                 echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer_last", array()), "html", null, true));
                 echo "
             </div>
           ";
             }
-            // line 196
+            // line 177
             echo "        </footer>
       ";
         }
-        // line 198
+        // line 179
         echo "      <div class=\"bottom-bar panel\">
         <div class=\"row\">
           <div class=\"large-12 columns\">
           &copy; ";
-        // line 201
+        // line 182
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true));
         echo " ";
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["site_name"]) ? $context["site_name"] : null), "html", null, true));
@@ -387,7 +341,7 @@ class __TwigTemplate_a94b9323a4471a51214d32003512d0513c5d5faa8f93b3ed63731b28489
 
     public function getDebugInfo()
     {
-        return array (  363 => 201,  358 => 198,  354 => 196,  348 => 193,  345 => 192,  342 => 191,  336 => 188,  333 => 187,  330 => 186,  324 => 183,  321 => 182,  319 => 181,  316 => 180,  314 => 179,  311 => 178,  305 => 175,  300 => 174,  297 => 173,  291 => 170,  286 => 169,  284 => 168,  278 => 165,  275 => 164,  269 => 163,  266 => 162,  263 => 161,  257 => 159,  254 => 158,  252 => 157,  248 => 156,  244 => 154,  237 => 150,  233 => 148,  231 => 147,  228 => 146,  221 => 142,  217 => 140,  215 => 139,  211 => 137,  201 => 132,  191 => 127,  186 => 124,  183 => 123,  177 => 120,  174 => 119,  171 => 118,  166 => 115,  159 => 113,  152 => 112,  145 => 110,  138 => 109,  136 => 108,  130 => 106,  128 => 105,  124 => 103,  117 => 99,  113 => 97,  111 => 96,  102 => 89,  98 => 88,  92 => 86,  86 => 84,  84 => 83,  80 => 81,  74 => 79,  72 => 78,  69 => 77,  67 => 76,  63 => 75,  43 => 57,);
+        return array (  317 => 182,  312 => 179,  308 => 177,  302 => 174,  299 => 173,  296 => 172,  290 => 169,  287 => 168,  284 => 167,  278 => 164,  275 => 163,  273 => 162,  270 => 161,  268 => 160,  265 => 159,  259 => 156,  254 => 155,  251 => 154,  245 => 151,  240 => 150,  238 => 149,  232 => 146,  229 => 145,  223 => 144,  220 => 143,  217 => 142,  211 => 140,  208 => 139,  206 => 138,  202 => 137,  198 => 135,  191 => 131,  187 => 129,  185 => 128,  182 => 127,  175 => 123,  171 => 121,  169 => 120,  165 => 118,  155 => 113,  145 => 108,  140 => 105,  137 => 104,  131 => 101,  128 => 100,  125 => 99,  120 => 96,  113 => 94,  106 => 93,  99 => 91,  92 => 90,  90 => 89,  84 => 87,  82 => 86,  78 => 84,  71 => 80,  67 => 78,  65 => 77,  43 => 57,);
     }
 }
 /* {#*/
@@ -448,37 +402,18 @@ class __TwigTemplate_a94b9323a4471a51214d32003512d0513c5d5faa8f93b3ed63731b28489
 /* #}*/
 /* */
 /* */
-/* */
-/* */
 /* <div class="main_wrapper">*/
 /* <header class="header_main">*/
-/* */
-/* */
 /* <div class="top-bar">*/
 /*   <div class="top-bar-left logo-img"><img src="logo.svg">*/
 /*     */
-/*     <div class="top-bar-right nav_primary">*/
-/*       <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">*/
-/*   <button class="menu-icon" type="button" data-toggle></button>*/
-/*     <div class="title-bar-title">Menu</div>*/
+/*   <div class="top-bar-right nav_primary">*/
+/*   <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">*/
+/*     <button class="menu-icon" type="button" data-toggle></button>*/
+/*   <div class="title-bar-title">Menu</div>*/
 /* </div>*/
 /* */
 /* <div class="top-bar" id="example-menu">*/
-/*      <!--  <header class="row" role="banner" aria-label="{{ 'Site header'|t }}">*/
-/*         {% if linked_site_name or linked_logo %}*/
-/*           <div class="large-2 columns">*/
-/*             {% if linked_logo %}*/
-/*               {{ linked_logo }}*/
-/*             {% endif %}*/
-/*           </div>*/
-/*           <div class="left large-4 columns">*/
-/*             {% if is_front %}*/
-/*               <h1 id="site-name">{{ linked_site_name }}</h1>*/
-/*             {% else %}*/
-/*               <div id="site-name">{{ linked_site_name }}</div>*/
-/*             {% endif %}*/
-/*           </div>*/
-/*         {% endif %}-->*/
 /*       */
 /*     </div>*/
 /* */
