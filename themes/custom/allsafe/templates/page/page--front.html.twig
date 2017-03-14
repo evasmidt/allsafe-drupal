@@ -1,0 +1,157 @@
+{#
+/**
+ * @file
+ * Zurb Foundations's theme implementation to display a single page.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ * - logo: The url of the logo image, as defined in theme settings.
+ * - linked_logo: The logo image, linked to <front>.
+ * - site_name: The name of the site. This is empty when displaying the site
+ *   name has been disabled in the theme settings.
+ * - linked_site_name: The name of the site that also links to <front>.
+ * - site_slogan: The slogan of the site. This is empty when displaying the site
+ *   slogan has been disabled in theme settings.
+ * - hide_site_name: A flag indicating if the site name has been toggled off on
+ *   the theme settings page. If hidden, the "visually-hidden" class is added
+ *   to make the site name visually hidden, but still accessible.
+ * - hide_site_slogan: A flag indicating if the site slogan has been toggled off
+ *   on the theme settings page. If hidden, the "visually-hidden" class is
+ *   added to make the site slogan visually hidden, but still accessible.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - messages: Status and error messages. Should be displayed prominently.
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.meta_header
+ * - page.header
+ * - page.help
+ * - page.highlighted
+ * - page.content
+ * - page.sidebar_first
+ * - page.sidebar_second
+ * - page.footer_first
+ * - page.footer_middle
+ * - page.footer_last
+ *
+ * @see template_preprocess_page()
+ * @see bartik_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+
+{# {{ devel_dump(node.field_hero_callout) }} #}
+<div class="main_wrapper">
+<header class="header_main">
+
+
+<div class="top-bar">
+  <div class="top-bar-left logo-img"><img src="logo.svg">
+    
+    <div class="top-bar-right nav_primary">
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+
+    <!-- <div class="top-bar-right"> -->
+      <ul class="medium-horizontal vertical dropdown menu" data-responsive-menu="accordion medium-dropdown">
+      <li class="menu-item"><a href="#">Locations</a></li>
+      <li class="menu-item"><a href="#">Contact Us</a></li>
+      <li class="menu-item"><a href="#">Storage Sizes</a></li>
+      <li class="menu-item"><a href="#">Storage Tips</a></li>
+    </ul>
+    <!-- </div> -->
+</div>
+{% if page.header %}
+            {{ page.header }}
+          {% endif %}             
+        </div>
+      </header>
+
+  <div class="clearfix"> 
+  <div class="home_block home_main_banner">
+  <div class="transparent">
+  <h1 class="home_main_header">All-Safe Self Storage</h1>
+  <p class="home_intro_text">All-Safe Self Storage has two self-storage facilities in Maine - Biddeford and Arundel - to meet all your storage needs.</p>
+  <p><a href="#" class="cta">Get directions &raquo;</a>
+  <a href="#" class="cta">Visit us &raquo;</a>
+  </div>
+  </div>
+  <div class="main_content_container"> 
+  <div class="home_block home_block_4-col">
+    <h2>Why Choose All-Safe?</h2>
+    <div class="col">
+      <h4 class="icon"><i class="icon-box-open"></i></h4>
+      <strong>Over 500 Storage Units to suit all needs.</strong> We'll help find the one that's right for you.
+    </div>
+    <div class="col">
+      <h4 class="icon"><i class="icon-lock-1"></i></h4>
+      <strong>24 hour Electronic access and security.</strong><br>So you can get to your stuff whenever you need it. No need to worry about when we're open.
+    </div>
+    <div class="col">
+      <h4 class="icon"><i class="icon-box-closed"></i></h4>
+      <strong>Insurance and peace of mind.</strong><br> Rest at ease because when you store your valuables with us, you're insured.
+    </div>
+    <div class="col">
+      <h4 class="icon"><i class="icon-user"></i></h4>
+      <strong>Full-time manager,</strong> easily accessible to you and always monitoring the site so you don't have to worry about anything.
+    </div>
+  </div>
+
+<div class="home_block clearfix">
+<h2>Find the right fit for you</h2>
+<p>We have up to 6 sizes of storage rooms. Learn how to determine what would best fit your needs. <a href="#" class="cta">Find your size &raquo;</a> 
+</div>
+
+</div>
+          
+
+
+      
+  {% if page.footer_first or page.footer_middle or page.footer_last %}
+        <footer class="main_footer">
+          {% if page.footer_first %}
+            <div id="footer-first">
+              {{ page.footer_first }}
+            </div>
+          {% endif %}
+          {% if page.footer_middle %}
+            <div id="footer-middle" class="footer_text_center">
+              {{ page.footer_middle }}
+            </div>
+          {% endif %}
+          {% if page.footer_last %}
+            <div id="footer-last" class="large-4 columns">
+              {{ page.footer_last }}
+            </div>
+          {% endif %}
+        </footer>
+      {% endif %}
+      <div class="bottom-bar panel">
+        <div class="row medium-collapse">
+          <div class="medium-3 columns medium-offset-3">
+            <p class="copyright color-gray">&copy; {{ "now"|date('Y') }} {{ 'All rights reserved.'|t }}<br /> {{ site_name }}</p>
+          </div>
+        </div>
+      </div>
+
+
+
