@@ -54,25 +54,20 @@
  * @see html.html.twig
  */
 #}
+<div class="inner-wrap" id="inner-wrap">
 
-
-<div class="main_wrapper">
-<header class="header_main">
-<div class="top-bar">
-  <div class="top-bar-left logo-img"><img src="logo.svg">
-    
-  <div class="top-bar-right nav_primary">
-  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
-</div>
-
-<div class="top-bar" id="example-menu">
-      
+ <div class="top-bar" id="menu" data-toggler><!-- menu list -->
+   <div class="row"> 
+    <div data-toggle="menu" class="large-12 columns">
+      <a class="menu-toggle__alt" data-toggle>Close</a>
+     </div>
     </div>
+    <div class="row fader">
+     {{ page.left_off_canvas }}
+    </div>
+ </div>
 
-    </div>  
- </header> 
+
 
       {% if page.header %}
         <div class="row">
