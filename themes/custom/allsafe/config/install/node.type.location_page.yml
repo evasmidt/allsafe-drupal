@@ -1,0 +1,14 @@
+# node.type.location_page.yml
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - allsafelocation # This is the name of the module we're using for this example
+name: 'Location Page'
+type: location_page
+description: 'Content type that should be used to keep information about the locations'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

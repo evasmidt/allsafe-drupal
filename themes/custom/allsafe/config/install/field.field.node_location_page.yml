@@ -1,0 +1,22 @@
+# field.field.node.location_page.body.yml
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.body
+        - node.type.location_page
+    module:
+        - text
+id: node.location_page.body
+field_name: body
+entity_type: node
+bundle: location_map
+label: Body
+description: 'More location information and contact details.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+    display_summary: true
+field_type: text_with_summary

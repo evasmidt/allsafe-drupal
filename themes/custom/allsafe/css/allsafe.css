@@ -3401,9 +3401,9 @@ table.hover tr:nth-of-type(even):hover {
             order: 1; }
   .top-bar::after {
     clear: both; }
-  .top-bar,
+  /*.top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #e6e6e6; }*/
   .top-bar input {
     width: 200px;
     margin-right: 1rem; }
@@ -3572,8 +3572,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", Arial, sans-serif; }
 
-.main_wrapper {
-  /*border: 1px solid red;*/ }
+
 
 .main_content_container {
   padding: 0 1em; }
@@ -3631,6 +3630,21 @@ a:hover#menu-icon {
 .title-bar-title {
   padding-left: 1em; }
 
+.menu .active > a {
+    color: #ef3e34;
+    background: #007ac3; }
+
+.menu .active>a {
+    color: #ef3e34;
+    background: #007ac3; }
+  .menu-item .active>a {
+    color: #ef3e34;
+    background: #007ac3; }
+
+  .menu-item .active > a {
+    color:red;
+    background: #007ac3; }
+
 .menu-item {
   display: inline-block;
   font-size: 1.4em;
@@ -3659,7 +3673,19 @@ a:hover#menu-icon {
       .menu-item :hover {
         border: none; } }
 
-.top-bar {
+#block-allsafe-main-menu {
+  background-color: #007ac3;
+  color: white;
+}
+.title-bar {
+  background-color: #007ac3;
+  color: white;
+}
+.menu li {
+  color: white;
+}
+
+.top-bar, .top-bar ul{
   background-color: #007ac3; }
 
 .top-bar-right .menu {
@@ -3747,6 +3773,12 @@ a:hover#menu-icon {
 
 .col i {
   font-size: 2em; }
+
+  h1.field-wrapper {
+    color: red;
+    font-size: 2.5em;
+    margin-top: .75em;
+  }
 
 .clearfix {
   clear: both; }

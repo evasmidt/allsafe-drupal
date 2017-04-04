@@ -54,30 +54,23 @@
  * @see html.html.twig
  */
 #}
-<div class="inner-wrap" id="inner-wrap">
 
- <div class="top-bar" id="menu" data-toggler><!-- menu list -->
-   <div class="row"> 
-    <div data-toggle="menu" class="large-12 columns">
-      <a class="menu-toggle__alt" data-toggle>Close</a>
-     </div>
-    </div>
-    <div class="row fader">
-     {{ page.left_off_canvas }}
-    </div>
- </div>
+
+ 
 
 
 
       {% if page.header %}
-        <div class="row">
-          <div class="large-12 columns">
+        
+          
             {{ page.header }}
-          </div>
-        </div>
+         
       {% endif %}
 
       <div class="row">
+
+    <div class="large-10 columns">
+
         {% if show_account_info %}
           <div class="{{ site_slogan ? 'large-6' : 'large-4 columns large-offset-8' }} columns hide-for-small">
             <p>
@@ -89,6 +82,7 @@
                 <a href="{{ path('user.register') }}">{{ 'Sign Up'|t }}</a>
               {% endif %}
             </p>
+          </div>
           </div>
         {% endif %}
         {% if site_slogan %}
@@ -181,3 +175,4 @@
     </div>
   </div>
 </div>
+

@@ -22,7 +22,8 @@
 
 {% if top_bar %}
   {% if top_bar_sticky %}
-  <div id="top-bar-sticky-container" data-sticky-container>
+  <div class="top-bar">
+  <div id="top-bar-sticky-container" class="header_main" data-sticky-container>
   {% endif %}
     <div {{ top_bar_attributes }}>
       <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
@@ -65,7 +66,14 @@
       {% endif %}
     {% else %}
       {% if menu_level == 0 %}
-        <ul{{ attributes.addClass('dropdown', 'menu') }} data-dropdown-menu>
+    <div class="top-bar">
+    <div class="top-bar-right nav_primary">
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+    </div>
+        <div class="top-bar" id="example-menu">
+        <ul{{ attributes.addClass('medium-horizontal', 'vertical', 'dropdown', 'menu') }} data-dropdown-menu="accordion medium-dropdown">
       {% else %}
         <ul class="menu">
       {% endif %}
@@ -74,7 +82,7 @@
       {% if top_bar %}
         {% set item_classes = [ item.below is not empty ? 'has-submenu' ] %}
       {% endif %}
-      <li{{ item.attributes.addClass(item_classes) }}>
+      <li{{ item.attributes.addClass('menu-item') }}>
         {{ link(item.title, item.url) }}
         {% if item.below %}
             {{ menus.menu_links(item.below, attributes, menu_level + 1, top_bar) }}
@@ -82,5 +90,6 @@
       </li>
     {% endfor %}
     </ul>
+  </div>
   {% endif %}
 {% endmacro %}
