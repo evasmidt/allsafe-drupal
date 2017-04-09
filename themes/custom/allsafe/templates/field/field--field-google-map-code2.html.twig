@@ -57,7 +57,7 @@
   {% if not label_hidden %}
     <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
   {% endif %}
-  <div{{ content_attributes.addClass('location-embed-map columns large-6') }}></div></div>
+  <div{{ content_attributes.addClass('location-embed-map columns large-6 large-expanded') }}></div></div>
     {% for item in items %}
       <div{{ item.attributes.addClass('location-embed-map') }}>{{ item.content }}</div>
     {% endfor %}
