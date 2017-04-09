@@ -102,45 +102,30 @@
 
 <div class="home_block clearfix">
 <h2>Find the right fit for you</h2>
-<p>We have up to 6 sizes of storage rooms. Learn how to determine what would best fit your needs. <a href="#" class="cta">Find your size &raquo;</a> 
+<p class="home-cta-block-text">We have up to 6 sizes of storage rooms. Learn how to determine what would best fit your needs. <a href="#" class="cta">Find your size &raquo;</a></p>
 </div>
 
 </div>
           
 
 
-      
-  {% if page.footer_first or page.footer_middle or page.footer_last %}
-        <footer class="main_footer">
-          {% if page.footer_first %}
-            <div id="footer-first">
-              {{ page.footer_first }}
-            </div>
-          {% endif %}
-          {% if page.footer_middle %}
-            <div id="footer-middle" class="footer_text_center">
-            <h2 class="footer-heading">All-Safe Self Storage</h2>
-            <p>504 Alfred Road, Biddeford, Maine</p>
-            <p>Route 1, Arundel</p>
-            <h5>Call <a href="tel:1-207-284-2100">207-284-2100</a></h5>
-          
-              {{ page.footer_middle }}
-           
-            </div>
-          {% endif %}
-          {% if page.footer_last %}
-            <div id="footer-last" class="large-4 columns">
-              {{ page.footer_last }}
-            </div>
-          {% endif %}
-        </footer>
-      {% endif %}
+   
       <div class="bottom-bar panel">
-        <div class="row medium-collapse">
-          <div class="medium-3 columns medium-offset-3">
-            <p class="copyright color-gray">&copy; {{ "now"|date('Y') }} {{ 'All rights reserved.'|t }}<br /> {{ site_name }}</p>
-          </div>
-        </div>
+      <footer class="main_footer">
+    <div class="footer_text_center">
+    <h2 class="footer-heading">All-Safe Self Storage</h2>
+    <p>504 Alfred Road, Biddeford, Maine | Route 1, Arundel</p>
+    <h5>Call <a href="tel:1-207-284-2100">207-284-2100</a></h5>
+    <ul>
+      <li><a href="https://www.facebook.com/allsafemaine" target="_blank"><i class="icon-facebook"></i> </a></li>
+      <li><a href="https://plus.google.com/+AllSafeSelfStorageBiddeford/about" target="_blank"><i class="icon-google-plus"></i> </a></li>
+      <li><a href="http://www.yelp.com/biz/all-safe-self-storage-biddeford" target="_blank"><i class="icon-yelp"></i> </a></li>
+    </ul>
+    <p class="copyright color-gray">&copy; {{ "now"|date('Y') }} {{ 'All rights reserved.'|t }}</p>
+      </div>
+  
+  </footer>
+        
       </div>
 
 

@@ -67,13 +67,13 @@
     {% else %}
       {% if menu_level == 0 %}
     <div class="top-bar">
-    <div class="top-bar-right nav_primary">
-      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <div class="top-bar-right top-bar-right-allsafe nav_primary">
+      <div class="allsafe-title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
     <div class="title-bar-title">Menu</div>
     </div>
         <div class="top-bar" id="example-menu">
-        <ul{{ attributes.addClass('medium-horizontal', 'vertical', 'dropdown', 'menu') }} data-dropdown-menu="accordion medium-dropdown">
+        <ul{{ attributes.addClass('medium-horizontal', 'vertical', 'dropdown', 'menu', 'allsafe-menu') }} data-dropdown-menu="accordion medium-dropdown">
       {% else %}
         <ul class="menu">
       {% endif %}
@@ -82,7 +82,7 @@
       {% if top_bar %}
         {% set item_classes = [ item.below is not empty ? 'has-submenu' ] %}
       {% endif %}
-      <li{{ item.attributes.addClass('menu-item') }}>
+      <li{{ item.attributes.addClass('menu-item', 'allsafe-menu-item') }}>
         {{ link(item.title, item.url) }}
         {% if item.below %}
             {{ menus.menu_links(item.below, attributes, menu_level + 1, top_bar) }}
@@ -91,5 +91,8 @@
     {% endfor %}
     </ul>
   </div>
+  <script>
+  $(document).foundation();
+</script>
   {% endif %}
 {% endmacro %}

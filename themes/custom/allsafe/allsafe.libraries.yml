@@ -11,8 +11,8 @@ global:
   version: 1.0
   css:
     base:
-      css/allsafe.css: {}
       css/foundation.css: {}
+      css/allsafe.css: {}
   js:
     js/vendor/foundation.min.js: {}
     js/vendor/jquery.js: {}

@@ -146,33 +146,27 @@
           </div>
         {% endif %}
       </div>
-      {% if page.footer_first or page.footer_middle or page.footer_last %}
-        <footer class="row">
-          {% if page.footer_first %}
-            <div id="footer-first" class="large-4 columns">
-              {{ page.footer_first }}
-            </div>
-          {% endif %}
-          {% if page.footer_middle %}
-            <div id="footer-middle" class="large-4 columns">
-              {{ page.footer_middle }}
-            </div>
-          {% endif %}
-          {% if page.footer_last %}
-            <div id="footer-last" class="large-4 columns">
-              {{ page.footer_last }}
-            </div>
-          {% endif %}
-        </footer>
-      {% endif %}
-      <div class="bottom-bar panel">
-        <div class="row">
-          <div class="large-12 columns">
-          &copy; {{ "now"|date('Y') }} {{ site_name }} {{ 'All rights reserved.'|t }}
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
+      <div class="clearfix"></div>
+    
+
+    <div class="bottom-bar panel">
+      <footer class="main_footer">
+    <div class="footer_text_center">
+    <h2 class="footer-heading">All-Safe Self Storage</h2>
+     <p>504 Alfred Road, Biddeford, Maine | Route 1, Arundel</p>
+    <h5>Call <a href="tel:1-207-284-2100">207-284-2100</a></h5>
+    <ul>
+      <li><a href="https://www.facebook.com/allsafemaine" target="_blank"><i class="icon-facebook"></i> </a></li>
+      <li><a href="https://plus.google.com/+AllSafeSelfStorageBiddeford/about" target="_blank"><i class="icon-google-plus"></i> </a></li>
+      <li><a href="http://www.yelp.com/biz/all-safe-self-storage-biddeford" target="_blank"><i class="icon-yelp"></i> </a></li>
+    </ul>
+    <p class="copyright color-gray">&copy; {{ "now"|date('Y') }} {{ 'All rights reserved.'|t }}</p>
+      </div>
+  
+  </footer>
+    </div>
+ 
+
 
